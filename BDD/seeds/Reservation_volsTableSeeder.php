@@ -23,13 +23,13 @@ class Reservation_volsTableSeeder extends Seeder
     //     for ($i=1; $i <2 ; $i++) 
     //     {
         DB::table('Reservation_vols')->insert([
-            'reference_reservation' => "FA111111",
-            'id_vol'=>4,
+            'num_reservation' =>1,
+            'id_vol'=>2,
 
             ]);
             DB::table('Reservation_vols')->insert([
-                'reference_reservation' => "FA222222",
-                'id_vol'=>5,
+                'num_reservation' => 2,
+                'id_vol'=>3,
     
                 ]);
 

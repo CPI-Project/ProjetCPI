@@ -14,10 +14,11 @@ class CreateAvionsTable extends Migration
     public function up()
     {
         Schema::create('avions', function (Blueprint $table) {
-            $table->bigIncrements('num_avion');
+            $table->bigIncrements('id');
+            $table->string('num_avion');
             $table->string('nom_avion');
             $table->integer('capacite_avion');
-            $table->integer('nb_bagage_max'); 
+            // $table->integer('nb_bagage_max'); 
         });
     }
 
